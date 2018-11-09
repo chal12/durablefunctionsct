@@ -8,11 +8,11 @@
 
 ## Release:
 
-[![Release Status](https://vsrm.dev.azure.com/fmeier/_apis/public/Release/badge/8888b2f4-bbe1-4194-81d4-2af21ac5e454/1/1)
+![Release Status](https://vsrm.dev.azure.com/fmeier/_apis/public/Release/badge/8888b2f4-bbe1-4194-81d4-2af21ac5e454/1/1)
 
 ## Swap:
 
-[![Release Status](https://vsrm.dev.azure.com/fmeier/_apis/public/Release/badge/8888b2f4-bbe1-4194-81d4-2af21ac5e454/1/2)
+![Release Status](https://vsrm.dev.azure.com/fmeier/_apis/public/Release/badge/8888b2f4-bbe1-4194-81d4-2af21ac5e454/1/2)
 
 ---
 services: functions
