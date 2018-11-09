@@ -36,7 +36,7 @@ steps:
   inputs:
     #sourceFolder: # Optional
     contents: '**\*' 
-    targetFolder: $(Build.ArtifactStagingDirectory)
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
     #cleanTargetFolder: false # Optional
     #overWrite: false # Optional
     #flattenFolders: false # Optional
