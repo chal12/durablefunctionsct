@@ -35,8 +35,8 @@ steps:
 - task: CopyFiles@2
   inputs:
     #sourceFolder: # Optional
-    #contents: '**' 
-    targetFolder: /home/vsts/work/1/a
+    contents: '**\*' 
+    targetFolder: $(Build.ArtifactStagingDirectory)
     #cleanTargetFolder: false # Optional
     #overWrite: false # Optional
     #flattenFolders: false # Optional
@@ -45,8 +45,8 @@ steps:
 # Publish build artifacts to Azure Artifacts/TFS or a file share
 - task: PublishBuildArtifacts@1
   #inputs:
-    #pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    #artifactName: 'drop' 
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+    artifactName: 'drop' 
     #publishLocation: 'Container' # Options: container, filePath
     #targetPath: # Required when publishLocation == FilePath
     #parallel: false # Optional
