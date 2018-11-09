@@ -77,10 +77,10 @@ namespace FanOutFanInCrawler
         [FunctionName("GetAllRepositoriesForOrganization")]
         public static async Task<List<(long id, string name)>> GetAllRepositoriesForOrganization([ActivityTrigger] DurableActivityContext context)
         {
-            // retrieves the organization name from the Orchestrator function
-            var organizationName = context.GetInput<string>();
+            // retrieves the user name from the Orchestrator function
+            var userName = context.GetInput<string>();
             // invoke the API to retrieve the list of repositories of a specific organization
-            var repositories = (await github.Repository.GetAllForOrg(organizationName)).Select(x => (x.Id, x.Name)).ToList();
+            var repositories = (await github.Repository.GetAllForUser(userName)).Select(x => (x.Id, x.Name)).ToList();
             return repositories;
         }
 
